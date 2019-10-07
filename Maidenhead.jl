@@ -63,7 +63,7 @@ function toLoc(maiden::String)
         lon += parse(Int, maiden[7]) * 5.0/600
         lat += parse(Int, maiden[8]) * 2.5/600
     end
-    
+
     return (lat, lon)
 end
 
@@ -76,9 +76,10 @@ if basename(PROGRAM_FILE) == basename(@__FILE__)
     println(toLoc(ARGS[1]))
   else
     @test toMaiden(40, -50) == "GN50aa"
-  
+
     lat, lon = toLoc("JO32ii09")
     @test isapprox(lat, 52.37083333333334)
     @test isapprox(lon, 6.666666666666667)
+    println("OK: Maidenhead self-test")
   end
 end
