@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.com/scivision/maidenhead-julia.svg?branch=master)](https://travis-ci.com/scivision/maidenhead-julia)
-
 # Maidenhead &lt;-&gt; Lat/Lon
 
 `maidenhead` provides a simple, yet effective location hashing
